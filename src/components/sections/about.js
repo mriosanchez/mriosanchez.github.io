@@ -135,19 +135,19 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              Hello! My name is Mario and I enjoy creating things that live on the internet. My
-              interest in web development started back in 2012 when I decided to try editing custom
-              Tumblr themes — turns out hacking together a custom reblog button taught me a lot
-              about HTML &amp; CSS!
+              Hello! My name is Mario and I enjoy crafting things out of nowhere and solving
+              problems. When I was a child I used to follow my dad around his workshop, fixing
+              broken things at home and making my own toys using scrap materials.
             </p>
 
             <p>
-              Fast-forward to today, and I’ve had the privilege of working at{' '}
+              Fast-forward to today, I’ve had the privilege of working at{' '}
               <a href="https://www.airbus.com/en">a huge corporation</a>,{' '}
               <a href="https://tuhacesalicante.com/">a SME</a>,{' '}
               <a href="https://piispala.fi/en/">a volunteering corps</a>,{' '}
               <a href="https://restaurantemarte.com/">a restaurant</a>, and as a lifeguard during
-              summers. My main focus these days is building something useful for the world.
+              summers. My main focus these days is building or fixing something useful for the
+              world.
             </p>
 
             <p>
