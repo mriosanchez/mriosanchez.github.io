@@ -1,13 +1,13 @@
 ---
-date: '2018-05-14'
-title: 'Lead Engineer'
-company: 'Upstatement'
-location: 'Boston, MA'
-range: 'May 2018 - Present'
-url: 'https://www.upstatement.com/'
+date: '2025-10-04'
+title: 'Maintenance Engineer'
+company: 'Airbus'
+location: 'Illescas, Spain'
+range: 'March 2025 - Present'
+url: 'https://www.airbus.com'
 ---
 
-- Deliver high-quality, robust production code for a diverse array of projects for clients including Harvard Business School, Everytown for Gun Safety, Pratt Institute, Koala Health, Vanderbilt University, The 19th News, and more
-- Work alongside creative directors to lead the research, development, and architecture of technical solutions to fulfill business requirements
-- Collaborate with designers, project managers, and other engineers to transform creative concepts into production realities for clients and stakeholders
-- Provide leadership within engineering department through close collaboration, knowledge shares, and mentorship
+- Analyzed demoulding process data on the A320 HTP automatic system to identify modules with higher failure rates and reduce cycle time.
+- Delivered technical specifications and coordinated with external suppliers.
+- Automated document workflows and managed intranet content for the team.
+- Supported daily production routines within the plant.
