@@ -1,27 +1,27 @@
 module.exports = {
-  email: 'brittany.chiang@gmail.com',
+  email: 'mriosanchezrodriguez@gmail.com',
 
   socialMedia: [
     {
       name: 'GitHub',
-      url: 'https://github.com/bchiang7',
+      url: 'https://github.com/mriosanchez',
     },
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/bchiang7',
+      url: 'https://www.instagram.com/mariito_o',
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/bchiang7',
+      url: 'https://x.com/mariito_0',
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/bchiang7',
+      url: 'https://www.linkedin.com/in/mriosanchezrodriguez',
     },
-    {
-      name: 'Codepen',
-      url: 'https://codepen.io/bchiang7',
-    },
+    //{
+    //  name: 'Codepen',
+    //  url: 'https://codepen.io/bchiang7',
+    //},
   ],
 
   navLinks: [
@@ -44,9 +44,9 @@ module.exports = {
   ],
 
   colors: {
-    green: '#64ffda',
-    navy: '#0a192f',
-    darkNavy: '#020c1b',
+    green: '#64ffda', //'#64ffda' original
+    navy: '#0a192f', //'#0a192f' original
+    darkNavy: '#020c1b', //'#020c1b' original
   },
 
   srConfig: (delay = 200, viewFactor = 0.25) => ({
