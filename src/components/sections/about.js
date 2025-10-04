@@ -125,7 +125,18 @@ const About = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['JavaScript (ES6+)', 'TypeScript', 'React', 'Eleventy', 'Node.js', 'WordPress'];
+  const skills = [
+    'Python',
+    'HTML',
+    'Matlab',
+    'Simulink',
+    'SAP',
+    'ESS',
+    'AutoCAD',
+    'Inventor',
+    'Office 365',
+    'AI',
+  ];
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
@@ -142,21 +153,17 @@ const About = () => {
 
             <p>
               Fast-forward to today, I’ve had the privilege of working at{' '}
-              <a href="https://www.airbus.com/en">a huge corporation</a>,{' '}
-              <a href="https://tuhacesalicante.com/">a SME</a>,{' '}
-              <a href="https://piispala.fi/en/">a volunteering corps</a>,{' '}
-              <a href="https://restaurantemarte.com/">a restaurant</a>, and as a lifeguard during
+              <a href="https://www.airbus.com">a huge corporation</a>,{' '}
+              <a href="https://tuhacesalicante.com">a SME</a>,{' '}
+              <a href="https://youth.europa.eu/solidarity_en">a volunteering corps</a>,{' '}
+              <a href="https://restaurantemarte.com">a restaurant</a>, and as a lifeguard during
               summers. My main focus these days is building or fixing something useful for the
               world.
             </p>
 
             <p>
-              I also recently{' '}
-              <a href="https://www.newline.co/courses/build-a-spotify-connected-app">
-                launched a course
-              </a>{' '}
-              that covers everything you need to build a web app with the Spotify API using Node
-              &amp; React.
+              I also recently collaborated with my friends to design &amp; build a{' '}
+              <a href="/404">bridge</a> using only ice cream sticks and glue.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
