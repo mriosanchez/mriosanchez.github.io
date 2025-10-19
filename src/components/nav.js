@@ -7,7 +7,7 @@ import { navLinks } from '@config';
 import { loaderDelay } from '@utils';
 import { useScrollDirection, usePrefersReducedMotion } from '@hooks';
 import { Menu } from '@components';
-import { IconLogo, IconHex } from '@components/icons';
+// import { IconLogo, IconHex } from '@components/icons';
 
 const StyledHeader = styled.header`
   ${({ theme }) => theme.mixins.flexBetween};
@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
   padding: 0px 50px;
   width: 100%;
   height: var(--nav-height);
-  background-color: rgba(10, 25, 47, 0.85);
+  background-color: var(--dark-navy);
   filter: none !important;
   pointer-events: auto !important;
   user-select: auto !important;
@@ -29,6 +29,10 @@ const StyledHeader = styled.header`
   }
   @media (max-width: 768px) {
     padding: 0 25px;
+    position: static;
+    background-color: transparent;
+    backdrop-filter: none;
+    box-shadow: none;
   }
 
   @media (prefers-reduced-motion: no-preference) {
@@ -38,8 +42,14 @@ const StyledHeader = styled.header`
       css`
         height: var(--nav-scroll-height);
         transform: translateY(0px);
-        background-color: rgba(10, 25, 47, 0.85);
+        background-color: var(--dark-navy);
         box-shadow: 0 10px 30px -10px var(--navy-shadow);
+
+        @media (max-width: 768px) {
+          transform: none;
+          background-color: transparent;
+          box-shadow: none;
+        }
       `};
 
     ${props =>
@@ -49,12 +59,19 @@ const StyledHeader = styled.header`
         height: var(--nav-scroll-height);
         transform: translateY(calc(var(--nav-scroll-height) * -1));
         box-shadow: 0 10px 30px -10px var(--navy-shadow);
+
+        @media (max-width: 768px) {
+          transform: none;
+          box-shadow: none;
+        }
       `};
   }
 `;
 
 const StyledNav = styled.nav`
-  ${({ theme }) => theme.mixins.flexBetween};
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
   position: relative;
   width: 100%;
   color: var(--lightest-slate);
@@ -181,29 +198,29 @@ const Nav = ({ isHome }) => {
   const fadeClass = isHome ? 'fade' : '';
   const fadeDownClass = isHome ? 'fadedown' : '';
 
-  const Logo = (
-    <div className="logo" tabIndex="-1">
-      {isHome ? (
-        <a href="/" aria-label="home">
-          <div className="hex-container">
-            <IconHex />
-          </div>
-          <div className="logo-container">
-            <IconLogo />
-          </div>
-        </a>
-      ) : (
-        <Link to="/" aria-label="home">
-          <div className="hex-container">
-            <IconHex />
-          </div>
-          <div className="logo-container">
-            <IconLogo />
-          </div>
-        </Link>
-      )}
-    </div>
-  );
+  // const Logo = (
+  //   <div className="logo" tabIndex="-1">
+  //     {isHome ? (
+  //       <a href="/" aria-label="home">
+  //         <div className="hex-container">
+  //           <IconHex />
+  //         </div>
+  //         <div className="logo-container">
+  //           <IconLogo />
+  //         </div>
+  //       </a>
+  //     ) : (
+  //       <Link to="/" aria-label="home">
+  //         <div className="hex-container">
+  //           <IconHex />
+  //         </div>
+  //         <div className="logo-container">
+  //           <IconLogo />
+  //         </div>
+  //       </Link>
+  //     )}
+  //   </div>
+  // );
 
   const ResumeLink = (
     <a className="resume-button" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
@@ -216,8 +233,6 @@ const Nav = ({ isHome }) => {
       <StyledNav>
         {prefersReducedMotion ? (
           <>
-            {Logo}
-
             <StyledLinks>
               <ol>
                 {navLinks &&
@@ -234,14 +249,6 @@ const Nav = ({ isHome }) => {
           </>
         ) : (
           <>
-            <TransitionGroup component={null}>
-              {isMounted && (
-                <CSSTransition classNames={fadeClass} timeout={timeout}>
-                  <>{Logo}</>
-                </CSSTransition>
-              )}
-            </TransitionGroup>
-
             <StyledLinks>
               <ol>
                 <TransitionGroup component={null}>

@@ -1,18 +1,11 @@
 import React from 'react';
-import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
 
   .inner {
-    display: grid;
-    grid-template-columns: 3fr 2fr;
-    grid-gap: 50px;
-
-    @media (max-width: 768px) {
-      display: block;
-    }
+    display: block;
   }
 `;
 const StyledText = styled.div`
@@ -43,65 +36,6 @@ const StyledText = styled.div`
     }
   }
 `;
-const StyledPic = styled.div`
-  position: relative;
-  max-width: 300px;
-
-  @media (max-width: 768px) {
-    margin: 50px auto 0;
-    width: 70%;
-  }
-
-  .wrapper {
-    ${({ theme }) => theme.mixins.boxShadow};
-    display: block;
-    position: relative;
-    width: 100%;
-    border-radius: var(--border-radius);
-    background-color: var(--green);
-
-    &:hover,
-    &:focus {
-      outline: 0;
-      transform: translate(-4px, -4px);
-
-      &:after {
-        transform: translate(8px, 8px);
-      }
-    }
-
-    .img {
-      position: relative;
-      border-radius: var(--border-radius);
-      transition: var(--transition);
-    }
-
-    &:before,
-    &:after {
-      content: '';
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      border-radius: var(--border-radius);
-      transition: var(--transition);
-    }
-
-    &:before {
-      top: 0;
-      left: 0;
-      background-color: var(--navy);
-      mix-blend-mode: screen;
-    }
-
-    &:after {
-      border: 2px solid var(--green);
-      top: 14px;
-      left: 14px;
-      z-index: -1;
-    }
-  }
-`;
 
 const About = () => {
   const skills = [
@@ -119,30 +53,39 @@ const About = () => {
 
   return (
     <StyledAboutSection id="about">
-      <h2 className="numbered-heading">About Me</h2>
+      {/* <h2 className="numbered-heading">About Me</h2> */}
 
       <div className="inner">
         <StyledText>
           <div>
             <p>
-              Hello! My name is Mario and I enjoy crafting things out of nowhere and solving
-              problems. When I was a child I used to follow my dad around his workshop, fixing
-              broken things at home and making my own toys using scrap materials.
+              <p>
+                Hello! My name is Mario and I enjoy crafting things out of nowhere and solving
+                problems. When I was a child I used to follow my dad around his workshop, fixing
+                broken things at home and making my own toys using scrap materials. I’ve always been
+                curious about how things work. Physics, maths, computer science, nutrition and
+                engineering have always caught my attention, and I try to learn something new about
+                them every day.
+              </p>
             </p>
-
+            <p>
+              During my studies in{' '}
+              <a href="https://mecanica.umh.es/" target="_blank" rel="noreferrer">
+                Mechanical Engineering
+              </a>
+              , between exams and projects, I learned about thermodynamics, structural analysis,
+              fluid mechanics, and programming. I collaborated with my friends to design &amp; build
+              a <a href="/404">bridge</a> using only ice cream sticks and glue. Later, I joined the
+              Airbus Discover Program, a master's that combines work experience at Airbus with
+              training in data analysis, business management, and soft skills.
+            </p>
             <p>
               Fast-forward to today, I’ve had the privilege of working at{' '}
               <a href="https://www.airbus.com">a huge corporation</a>,{' '}
               <a href="https://tuhacesalicante.com">a SME</a>,{' '}
               <a href="https://youth.europa.eu/solidarity_en">a volunteering corps</a>,{' '}
               <a href="https://restaurantemarte.com">a restaurant</a>, and as a lifeguard during
-              summers. My main focus these days is building or fixing something useful for the
-              world.
-            </p>
-
-            <p>
-              I also recently collaborated with my friends to design &amp; build a{' '}
-              <a href="/404">bridge</a> using only ice cream sticks and glue.
+              summers. My main focus these days is giving useful solutions for the world.
             </p>
 
             <p>Here are a few technologies I’ve been working with recently:</p>
@@ -152,19 +95,6 @@ const About = () => {
             {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
           </ul>
         </StyledText>
-
-        <StyledPic>
-          <div className="wrapper">
-            <StaticImage
-              className="img"
-              src="../../images/me.jpg"
-              width={500}
-              quality={95}
-              formats={['AUTO', 'WEBP', 'AVIF']}
-              alt="Headshot"
-            />
-          </div>
-        </StyledPic>
       </div>
     </StyledAboutSection>
   );

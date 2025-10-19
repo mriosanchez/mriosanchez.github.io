@@ -1,8 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import React from 'react';
 import styled from 'styled-components';
-import { navDelay, loaderDelay } from '@utils';
-import { usePrefersReducedMotion } from '@hooks';
 
 const StyledHeroSection = styled.section`
   display: flex;
@@ -11,20 +8,20 @@ const StyledHeroSection = styled.section`
   justify-content: center;
   width: 100%;
   height: 100%;
-  padding: 0 0 0 150px;
+  padding: 0 0 0 220px;
   transform: translateY(-15%);
 
   @media (max-width: 1200px) {
-    padding: 0 0 0 100px;
+    padding: 0 0 0 160px;
     transform: translateY(-15%);
   }
 
   @media (max-width: 768px) {
     align-items: flex-start;
     justify-content: flex-start;
-    min-height: 60vh;
+    min-height: 15vh;
     height: auto;
-    padding: 0 0 24px 0;
+    padding: 0;
     transform: none;
   }
 
@@ -52,7 +49,7 @@ const StyledHeroSection = styled.section`
     line-height: 1.05;
 
     @media (max-width: 768px) {
-      font-size: clamp(50px, 7vw, 60px);
+      font-size: clamp(40px, 5.6vw, 48px);
     }
   }
 
@@ -61,11 +58,10 @@ const StyledHeroSection = styled.section`
     margin-bottom: 20px;
     line-height: 1.1;
     font-weight: 400;
-    font-size: clamp(22px, 2.5vw, 30px);
-    color: var(--slate);
+    font-size: clamp(18px, 2vw, 26px);
 
     @media (max-width: 768px) {
-      font-size: clamp(28px, 5vw, 35px);
+      font-size: clamp(22px, 4vw, 28px);
     }
   }
 
@@ -105,59 +101,24 @@ const StyledHeroSection = styled.section`
 `;
 
 const Hero = () => {
-  const [isMounted, setIsMounted] = useState(false);
-  const prefersReducedMotion = usePrefersReducedMotion();
-
-  useEffect(() => {
-    if (prefersReducedMotion) {
-      return;
-    }
-
-    const timeout = setTimeout(() => setIsMounted(true), navDelay);
-    return () => clearTimeout(timeout);
-  }, []);
-
-  // const one = <h1>Hi, my name is</h1>;
-  const two = <h2>Mario Sánchez</h2>;
-  const three = <h3>Mechanical Engineer </h3>;
-  const four = (
-    <>
-      <p>
-        I love designing, building &amp; fixing things. I'm currently focused on data science and
-        predictive maintenance at{' '}
-        <a href="https://www.airbus.com" target="_blank" rel="noreferrer">
-          Airbus
-        </a>
-        .
-      </p>
-    </>
-  );
-  // const five = (
-  //   <a className="email-link" href="/404" target="_blank" rel="noreferrer">
-  //     Check out my blog!
-  //   </a>
-  // );
-
-  const items = [two, three, four];
+  const items = [
+    <h2 key="name">Mario Sánchez</h2>,
+    <h3 key="title">Mechanical Engineer </h3>,
+    <p key="description">
+      I love designing, building &amp; fixing things. I'm currently focused on data science and
+      predictive maintenance at{' '}
+      <a href="https://www.airbus.com" target="_blank" rel="noreferrer">
+        Airbus
+      </a>
+      .
+    </p>,
+  ];
 
   return (
     <StyledHeroSection>
-      {prefersReducedMotion ? (
-        <>
-          {items.map((item, i) => (
-            <div key={i}>{item}</div>
-          ))}
-        </>
-      ) : (
-        <TransitionGroup component={null}>
-          {isMounted &&
-            items.map((item, i) => (
-              <CSSTransition key={i} classNames="fadeup" timeout={loaderDelay}>
-                <div style={{ transitionDelay: `${i + 1}00ms` }}>{item}</div>
-              </CSSTransition>
-            ))}
-        </TransitionGroup>
-      )}
+      {items.map((item, i) => (
+        <div key={i}>{item}</div>
+      ))}
     </StyledHeroSection>
   );
 };

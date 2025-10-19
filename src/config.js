@@ -34,13 +34,13 @@ module.exports = {
       url: '/#jobs',
     },
     {
-      name: 'Work',
+      name: 'Projects',
       url: '/#projects',
     },
-    {
-      name: 'Contact',
-      url: '/#contact',
-    },
+    // {
+    //   name: 'Contact',
+    //   url: '/#contact',
+    // },
   ],
 
   colors: {
