@@ -1,12 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+// import { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 import { Helmet } from 'react-helmet';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+// import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import { navDelay } from '@utils';
+// import { navDelay } from '@utils';
 import { Layout } from '@components';
-import { usePrefersReducedMotion } from '@hooks';
+// import { usePrefersReducedMotion } from '@hooks';
 
 const StyledMainContainer = styled.main`
   ${({ theme }) => theme.mixins.flexCenter};
@@ -28,17 +29,17 @@ const StyledHomeButton = styled(Link)`
 `;
 
 const NotFoundPage = ({ location }) => {
-  const [isMounted, setIsMounted] = useState(false);
-  const prefersReducedMotion = usePrefersReducedMotion();
+  // OPTIMIZED: Removed animation logic for faster loading
+  // const [isMounted, setIsMounted] = useState(false);
+  // const prefersReducedMotion = usePrefersReducedMotion();
 
-  useEffect(() => {
-    if (prefersReducedMotion) {
-      return;
-    }
-
-    const timeout = setTimeout(() => setIsMounted(true), navDelay);
-    return () => clearTimeout(timeout);
-  }, []);
+  // useEffect(() => {
+  //   if (prefersReducedMotion) {
+  //     return;
+  //   }
+  //   const timeout = setTimeout(() => setIsMounted(true), navDelay);
+  //   return () => clearTimeout(timeout);
+  // }, []);
 
   const content = (
     <StyledMainContainer className="fillHeight">
@@ -51,7 +52,10 @@ const NotFoundPage = ({ location }) => {
   return (
     <Layout location={location}>
       <Helmet title="Page Not Found" />
+      {/* OPTIMIZED: Direct rendering without animations */}
+      {content}
 
+      {/* ORIGINAL ANIMATION CODE - COMMENTED OUT FOR PERFORMANCE
       {prefersReducedMotion ? (
         <>{content}</>
       ) : (
@@ -63,6 +67,7 @@ const NotFoundPage = ({ location }) => {
           )}
         </TransitionGroup>
       )}
+      */}
     </Layout>
   );
 };

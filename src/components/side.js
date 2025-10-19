@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+// import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
+// import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import styled from 'styled-components';
-import { loaderDelay } from '@utils';
-import { usePrefersReducedMotion } from '@hooks';
+// import { loaderDelay } from '@utils';
+// import { usePrefersReducedMotion } from '@hooks';
 
 const StyledSideElement = styled.div`
   width: 40px;
@@ -24,20 +25,24 @@ const StyledSideElement = styled.div`
   }
 `;
 
-const Side = ({ children, isHome, orientation }) => {
-  const [isMounted, setIsMounted] = useState(!isHome);
-  const prefersReducedMotion = usePrefersReducedMotion();
+const Side = ({ children, orientation }) => (
+  // OPTIMIZED: Removed animation logic for faster loading
+  // const [isMounted, setIsMounted] = useState(!isHome);
+  // const prefersReducedMotion = usePrefersReducedMotion();
 
-  useEffect(() => {
-    if (!isHome || prefersReducedMotion) {
-      return;
-    }
-    const timeout = setTimeout(() => setIsMounted(true), loaderDelay);
-    return () => clearTimeout(timeout);
-  }, []);
+  // useEffect(() => {
+  //   if (!isHome || prefersReducedMotion) {
+  //     return;
+  //   }
+  //   const timeout = setTimeout(() => setIsMounted(true), loaderDelay);
+  //   return () => clearTimeout(timeout);
+  // }, []);
 
-  return (
-    <StyledSideElement orientation={orientation}>
+  <StyledSideElement orientation={orientation}>
+    {/* OPTIMIZED: Direct rendering without animations */}
+    {children}
+
+    {/* ORIGINAL ANIMATION CODE - COMMENTED OUT FOR PERFORMANCE
       {prefersReducedMotion ? (
         <>{children}</>
       ) : (
@@ -49,13 +54,11 @@ const Side = ({ children, isHome, orientation }) => {
           )}
         </TransitionGroup>
       )}
-    </StyledSideElement>
-  );
-};
-
+      */}
+  </StyledSideElement>
+);
 Side.propTypes = {
   children: PropTypes.node.isRequired,
-  isHome: PropTypes.bool,
   orientation: PropTypes.string,
 };
 

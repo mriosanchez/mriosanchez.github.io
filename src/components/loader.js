@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react';
-import { Helmet } from 'react-helmet';
+import React from 'react';
+// import { useState, useEffect } from 'react';
+// import { Helmet } from 'react-helmet';
 import PropTypes from 'prop-types';
-import anime from 'animejs';
-import styled from 'styled-components';
-import { IconLoader } from '@components/icons';
+// import anime from 'animejs';
+// import styled from 'styled-components';
+// import { IconLoader } from '@components/icons';
 
+/*
 const StyledLoader = styled.div`
   ${({ theme }) => theme.mixins.flexCenter};
   position: fixed;
@@ -35,8 +37,18 @@ const StyledLoader = styled.div`
     }
   }
 `;
+*/
 
 const Loader = ({ finishLoading }) => {
+  // OPTIMIZED: Skip all animations and call finishLoading immediately
+  React.useEffect(() => {
+    finishLoading();
+  }, [finishLoading]);
+
+  // Return minimal loader or null for instant loading
+  return null;
+
+  /* ORIGINAL LOADER CODE - COMMENTED OUT FOR PERFORMANCE
   const [isMounted, setIsMounted] = useState(false);
 
   const animate = () => {
@@ -90,6 +102,7 @@ const Loader = ({ finishLoading }) => {
       </div>
     </StyledLoader>
   );
+  */
 };
 
 Loader.propTypes = {
