@@ -1,4 +1,5 @@
 import React from 'react';
+import ProfilePicture from '@components/profilePicture';
 import styled from 'styled-components';
 
 const StyledHeroSection = styled.section`
@@ -8,20 +9,15 @@ const StyledHeroSection = styled.section`
   justify-content: center;
   width: 100%;
   height: 100%;
-  padding: 0 0 0 220px;
+  padding: 14rem 0 0 220px;
   transform: translateY(-15%);
 
   @media (max-width: 1200px) {
-    padding: 0 0 0 160px;
-    transform: translateY(-15%);
-  }
-
-  @media (max-width: 768px) {
+    padding: 0 0 0 0;
     align-items: flex-start;
     justify-content: flex-start;
-    min-height: 15vh;
+    min-height: auto;
     height: auto;
-    padding: 0;
     transform: none;
   }
 
@@ -119,6 +115,7 @@ const Hero = () => {
       {items.map((item, i) => (
         <div key={i}>{item}</div>
       ))}
+      <ProfilePicture />
     </StyledHeroSection>
   );
 };

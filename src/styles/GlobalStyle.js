@@ -15,6 +15,8 @@ const GlobalStyle = createGlobalStyle`
   }
 
   *,
+    
+
   *:before,
   *:after {
     box-sizing: inherit;
@@ -75,6 +77,13 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
     background-color: var(--dark-navy);
+    @media (max-width: 768px) {
+      background:
+        radial-gradient(circle at center, rgba(23,29,61,1) 0%, rgba(23,29,61,1) 0%, var(--dark-navy) 100%);
+      background-attachment: fixed;
+      background-position: center center;
+      background-repeat: no-repeat;
+    }
     color: var(--slate);
     font-family: var(--font-sans);
     font-size: var(--fz-xl);

@@ -3,27 +3,29 @@ import { StaticImage } from 'gatsby-plugin-image';
 import styled from 'styled-components';
 
 const StyledPicture = styled.div`
-  position: absolute;
-  bottom: 20%;
-  left: 50%;
-  transform: translateX(-50%);
   max-width: 280px;
   width: 80%;
+  margin-top: 2.5rem;
 
   @media (max-width: 1200px) {
     max-width: 250px;
     width: 75%;
-    bottom: 25%;
+  }
+
+  @media (min-width: 768px) and (max-width: 1200px) {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
   }
 
   @media (max-width: 768px) {
+    margin-top: 3.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
     position: relative;
-    margin: 0 auto 30px;
     width: 70%;
     max-width: 300px;
-    transform: none;
-    left: auto;
-    bottom: auto;
   }
 
   .wrapper {

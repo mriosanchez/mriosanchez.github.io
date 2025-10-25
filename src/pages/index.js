@@ -2,13 +2,12 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 import { Layout, Hero, About, Jobs, Featured, Projects /*, Contact*/ } from '@components';
-import ProfilePicture from '@components/profilePicture';
 
 const StyledMainContainer = styled.main`
   display: flex;
   min-height: 100vh;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1200px) {
     flex-direction: column;
   }
 `;
@@ -27,12 +26,6 @@ const StyledHeroColumn = styled.div`
   z-index: 1;
 
   @media (max-width: 1200px) {
-    left: 7%;
-    width: 36%;
-    padding: 40px 15px 0 0;
-  }
-
-  @media (max-width: 768px) {
     position: static;
     width: 100%;
     height: auto;
@@ -45,8 +38,8 @@ const StyledHeroColumn = styled.div`
     }
   }
 
-  @media (max-width: 480px) {
-    padding: 120px 25px 40px;
+  @media (max-width: 768px) {
+    padding: 40px 25px 40px;
   }
 `;
 
@@ -62,12 +55,6 @@ const StyledContentColumn = styled.div`
   }
 
   @media (max-width: 1200px) {
-    margin-left: 45%;
-    width: 53%;
-    padding: 40px 20px 100px 80px;
-  }
-
-  @media (max-width: 768px) {
     margin-left: 0;
     width: 100%;
     padding: 40px 50px 100px;
@@ -87,12 +74,8 @@ const IndexPage = ({ location }) => (
     <StyledMainContainer className="fillHeight">
       <StyledHeroColumn>
         <Hero />
-        <ProfilePicture />
       </StyledHeroColumn>
       <StyledContentColumn>
-        <div className="mobile-picture">
-          <ProfilePicture />
-        </div>
         <About />
         <Jobs />
         <Featured />
