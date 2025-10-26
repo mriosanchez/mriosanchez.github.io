@@ -1,5 +1,5 @@
 ---
-date: '1'
+date: '2'
 title: 'Wooden Bridge Competition'
 cover: './bridge1.jpg'
 github: ''
