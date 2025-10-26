@@ -1,3 +1,11 @@
+You can check out my personal portfolio live at: [https://mariosanchez.netlify.app](https://mariosanchez.netlify.app)
+
+## Personal Portfolio
+
+This is my personal portfolio website, built to showcase my work, experience, and projects. The site is based on the open source template from [brittanychiang.com - v4](https://github.com/bchiang7/v4), to whom I give full credit and thanks for the inspiration and foundation.
+
+---
+
 <div align="center">
   <img alt="Logo" src="https://raw.githubusercontent.com/bchiang7/v4/main/src/images/logo.png" width="100" />
 </div>
@@ -23,11 +31,11 @@
 
 ## 🚨 Forking this repo (please read!)
 
-Many people have contacted me asking me if they can use this code for their own website, and the answer to that question is usually **yes, with attribution**.
+As Brittany Chiang's original site is open source, I want to follow the same philosophy and keep this repository open and forkeable.
 
-I value keeping my site open source, but as you all know, _**plagiarism is bad**_. It's always disheartening whenever I find that someone has copied my site without giving me credit. I spent a non-trivial amount of effort building and designing this iteration of my website, and I am proud of it! All I ask of you all is to not claim this effort as your own.
+If you want to fork this repo and use it for your own site, please give proper credit to Brittany Chiang as the original template author.
 
-Please also note that I did not build this site with the intention of it being a starter theme, so if you have questions about implementation, please refer to the [Gatsby docs](https://www.gatsbyjs.org/docs/).
+To fork this repository, follow these steps:
 
 ### TL;DR
 
