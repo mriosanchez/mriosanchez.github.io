@@ -44,6 +44,9 @@ const Head = ({ title, description, image }) => {
     <Helmet title={title} defaultTitle={seo.title} titleTemplate={`%s | ${defaultTitle}`}>
       <html lang="en" />
 
+      {/* Set mobile browser bar color using CSS variable */}
+      <meta name="theme-color" content="var(--dark-navy)" />
+
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
 
