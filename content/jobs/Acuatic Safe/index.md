@@ -1,9 +1,9 @@
 ---
-date: '2020-09-10'
+date: '2018-09-10'
 title: 'Lifeguard'
 company: 'Acuatic Safe'
 location: 'Alicante, Spain'
-range: 'August - September 2020'
+range: 'August - September 2018'
 #url: 'https://tuhacesalicante.com' //in this case it doesn't have one
 ---
 
