@@ -4,7 +4,7 @@ title: 'Robot P1'
 company: 'Kuka'
 location: 'Illescas, Spain'
 range: '13/10/2025 - 17/10/2025'
-url: '/Kuka_P1_MSR.pdf'
+url: 'https://www.kuka.com/'
 ---
 
 - Programming course for KUKA robots.
@@ -12,3 +12,4 @@ url: '/Kuka_P1_MSR.pdf'
 - Programming and executing movements in KRL.
 - Implementing collision detection and logical functions.
 - Working with variables, data types, and control integration.
+- <a class="inline-link" href="/certificates/Kuka_P1_certificate.pdf" target="_blank" rel="noreferrer">View certificate</a>

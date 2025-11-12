@@ -4,10 +4,11 @@ title: 'Degree'
 company: 'UMH & ULL'
 location: 'Alicante & Tenerife, Spain'
 range: 'September 2020 - May 2024'
-#url: 'https://mecanica.umh.es/' //in this case it doesn't have one
+url: 'https://www.umh.es/'
 ---
 
 - Thermodynamics and Heat Transfer
 - Fluid Mechanics and Fluid Mechanics Systems
 - Strength of Materials and Structures
 - Design of Machines and Mechanical Components
+- <a class="inline-link" href="/certificates/Degree_certificate.pdf" target="_blank" rel="noreferrer">View certificate</a>
