@@ -9,11 +9,14 @@ const StyledHeroSection = styled.section`
   justify-content: center;
   width: 100%;
   height: 100%;
-  padding: 14rem 0 0 220px;
+  /* Margen lateral izquierdo fluido: 220px en 1920px, 132px (60%) en 1200px, y menor en pantallas más pequeñas */
+
+  padding: clamp(300px, 18vh, 224px) clamp(12px, calc(2vw + 12px), 50px) clamp(32px, 8vh, 96px)
+    clamp(32px, calc(8vw + 36px), 220px);
   transform: translateY(-15%);
 
   @media (max-width: 1200px) {
-    padding: 0 0 0 0;
+    padding: 0 12px 0 0;
     align-items: flex-start;
     justify-content: flex-start;
     min-height: auto;
