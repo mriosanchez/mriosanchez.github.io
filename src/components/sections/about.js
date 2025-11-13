@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const StyledAboutSection = styled.section`
   max-width: 900px;
+  margin-top: -100px;
 
   .inner {
     display: block;
@@ -59,14 +60,14 @@ const About = () => {
         <StyledText>
           <div>
             <p>
-              <p>
+              <span>
                 Hello! My name is Mario and I enjoy crafting things out of nowhere and solving
                 problems. When I was a child I used to follow my dad around his workshop, fixing
                 broken things at home and making my own toys using scrap materials. I’ve always been
                 curious about how things work. Physics, maths, computer science, nutrition and
                 engineering have always caught my attention, and I try to learn something new about
                 them every day.
-              </p>
+              </span>
             </p>
             <p>
               During my studies in{' '}
@@ -75,9 +76,9 @@ const About = () => {
               </a>
               , between exams and projects, I learned about thermodynamics, structural analysis,
               fluid mechanics, and programming. I collaborated with my friends to design &amp; build
-              a <a href="/404">bridge</a> using only ice cream sticks and glue. Later, I joined the
-              Airbus Discover Program, a master's that combines work experience at Airbus with
-              training in data analysis, business management, and soft skills.
+              a <a href="/wooden-bridge-project">bridge</a> using only ice cream sticks and glue.
+              Later, I joined the Airbus Discover Program, a master's that combines work experience
+              at Airbus with training in data analysis, business management, and soft skills.
             </p>
             <p>
               Fast-forward to today, I’ve had the privilege of working at{' '}

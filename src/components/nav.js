@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
-import styled, { css } from 'styled-components';
+import styled /*, { css }*/ from 'styled-components';
 import { navLinks } from '@config';
 import { loaderDelay } from '@utils';
 import { useScrollDirection, usePrefersReducedMotion } from '@hooks';
@@ -11,9 +11,9 @@ import { Menu } from '@components';
 
 const StyledHeader = styled.header`
   ${({ theme }) => theme.mixins.flexBetween};
-  position: fixed;
-  top: 0;
-  z-index: 11;
+  position: static;
+  top: auto;
+  z-index: auto;
   padding: 0px 50px;
   width: 100%;
   height: var(--nav-height);
@@ -33,38 +33,6 @@ const StyledHeader = styled.header`
     background-color: transparent;
     backdrop-filter: none;
     box-shadow: none;
-  }
-
-  @media (prefers-reduced-motion: no-preference) {
-    ${props =>
-    props.scrollDirection === 'up' &&
-      !props.scrolledToTop &&
-      css`
-        height: var(--nav-scroll-height);
-        transform: translateY(0px);
-        background-color: var(--dark-navy);
-        box-shadow: 0 10px 30px -10px var(--navy-shadow);
-
-        @media (max-width: 768px) {
-          transform: none;
-          background-color: transparent;
-          box-shadow: none;
-        }
-      `};
-
-    ${props =>
-    props.scrollDirection === 'down' &&
-      !props.scrolledToTop &&
-      css`
-        height: var(--nav-scroll-height);
-        transform: translateY(calc(var(--nav-scroll-height) * -1));
-        box-shadow: 0 10px 30px -10px var(--navy-shadow);
-
-        @media (max-width: 768px) {
-          transform: none;
-          box-shadow: none;
-        }
-      `};
   }
 `;
 
