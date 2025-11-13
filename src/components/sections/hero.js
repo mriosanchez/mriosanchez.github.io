@@ -11,8 +11,9 @@ const StyledHeroSection = styled.section`
   height: 100%;
   /* Margen lateral izquierdo fluido: 220px en 1920px, 132px (60%) en 1200px, y menor en pantallas más pequeñas */
 
-  padding: clamp(300px, 18vh, 224px) clamp(12px, calc(2vw + 12px), 50px) clamp(32px, 8vh, 96px)
+  padding: clamp(300px, 18vh, 224px) clamp(12px, calc(2vw + 12px), 100px) clamp(32px, 8vh, 96px)
     clamp(32px, calc(8vw + 36px), 220px);
+
   transform: translateY(-15%);
 
   @media (max-width: 1200px) {
@@ -46,6 +47,7 @@ const StyledHeroSection = styled.section`
     margin: 0;
     font-size: clamp(40px, 4vw, 50px);
     line-height: 1.05;
+    color: var(--white);
 
     @media (max-width: 768px) {
       font-size: clamp(40px, 5.6vw, 48px);
@@ -58,6 +60,7 @@ const StyledHeroSection = styled.section`
     line-height: 1.1;
     font-weight: 400;
     font-size: clamp(18px, 2vw, 26px);
+    color: var(--white);
 
     @media (max-width: 768px) {
       font-size: clamp(22px, 4vw, 28px);
