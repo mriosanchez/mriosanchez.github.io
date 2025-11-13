@@ -16,4 +16,4 @@ A hybrid air conditioning system that uses the Maisotsenko Cycle to pre-cool the
 
 ---
 
-- [Download the full thesis (PDF)](/images/maisotsenko/ThesisCycleM.pdf)
+- [View the thesis (PDF)](/images/maisotsenko/ThesisCycleM.pdf)

@@ -2,7 +2,7 @@
 date: '2'
 title: 'Maisotsenko Cycle'
 cover: './demo.png'
-github: 'https://github.com/bchiang7/spotify-profile'
+github: ''
 external: '/maisotsenko-cycle-tfg'
 tech:
   - Thermodynamics
