@@ -40,7 +40,7 @@ const StyledSection = styled.section`
 
   h2 {
     font-size: clamp(24px, 4vw, 32px);
-    color: var(--lightest-slate);
+    color: var(--white);
     margin: 50px 0 25px 0;
     font-weight: 500;
   }
@@ -120,20 +120,16 @@ const WoodenBridgeProjectPage = ({ location }) => (
 
         <StyledSpecs>
           <div className="spec-item">
-            <h4>Final Weight</h4>
-            <p>4.2 kg</p>
+            <h4>Weight</h4>
+            <p>4,2 kg</p>
           </div>
           <div className="spec-item">
-            <h4>Load Capacity</h4>
+            <h4>Load</h4>
             <p>1,156 kg</p>
           </div>
           <div className="spec-item">
             <h4>Strength Ratio</h4>
             <p>275:1</p>
-          </div>
-          <div className="spec-item">
-            <h4>Team Size</h4>
-            <p>5 </p>
           </div>
           <div className="spec-item">
             <h4>Materials</h4>
@@ -146,19 +142,18 @@ const WoodenBridgeProjectPage = ({ location }) => (
           alt="Bridge supporting 1156kg during final test"
         />
 
-        <StyledSection style={{ marginTop: '30px' }}>
-          <h2>The Challenge</h2>
+        <StyledSection style={{ marginTop: '0px' }}>
           <p>
-            As mechanical engineering students at Universidad Miguel Hernández (UMH), we faced an
-            exciting structural engineering challenge: design and build a bridge using only popsicle
-            sticks and white glue that could support maximum weight while staying under 4.2kg total
-            mass.
+            During our mechanical engineering studies at Universidad Miguel Hernández (UMH), we took
+            on a challenge that at first looked simple: build a bridge using only popsicle sticks
+            and white glue, with a maximum total weight of 4.2 kg. The goal was to support as much
+            load as possible, so every gram and every connection mattered.
           </p>
           <p>
-            The competition had strict requirements: the bridge needed to span 80cm with a minimum
-            clearance of 45cm height, support standardized weights, and be constructed using only
-            approved materials. The real challenge was optimizing the strength-to-weight ratio
-            within these constraints.
+            The competition rules forced us to think like real engineers. The bridge had to span 80
+            cm, maintain a minimum height of 45 cm, and use only the approved materials. Because of
+            that, our main focus quickly became how to get the best strength-to-weight ratio without
+            over-building the structure.
           </p>
 
           <StyledImage
@@ -166,17 +161,16 @@ const WoodenBridgeProjectPage = ({ location }) => (
             alt="Competition weight placement demonstration"
           />
 
-          <h2>Research and Initial Design</h2>
-          <p>
-            Our team of five engineers started by researching previous competition winners and
-            analyzing different truss configurations. We needed to understand how loads would
-            distribute through our structure and identify the most efficient geometric patterns.
+          <p style={{ marginTop: '40px' }}>
+            We started by reviewing past designs and comparing different truss systems to understand
+            how load paths would behave. Since we couldn’t test the real bridge early on, we looked
+            for small ways to validate our ideas.
           </p>
           <p>
-            To validate our load distribution hypothesis, we conducted a creative experiment in my
-            bathroom. We simulated the bridge loading by hanging cans from a string attached to two
-            points, recreating the exact force distribution we expected during testing. This simple
-            but effective method helped us visualize stress patterns before construction.
+            One of those ideas was a simple experiment at home: hanging cans from a string between
+            two points to imitate the way loads would be applied. It wasn’t fancy, but it helped us
+            visualize how forces moved through the structure and confirmed where reinforcement would
+            actually be useful.
           </p>
 
           <StyledImage
@@ -184,11 +178,12 @@ const WoodenBridgeProjectPage = ({ location }) => (
             alt="Load distribution experiment setup in bathroom"
           />
 
-          <h3>CAD Design and Planning</h3>
-          <p>
-            Using AutoCAD, we created a precise technical drawing that defined our bridge's geometry
-            and popsicle stick placement. This blueprint became our construction template, ensuring
-            accuracy and consistency throughout the build process.
+          <p style={{ marginTop: '40px' }}>
+            Once we felt confident with the concept, we drew a little idea of the bridge in AutoCAD.
+            This allowed us to fix dimensions, angles, and more or less the position of sticks
+            before touching any materials. The drawing also became our physical template during
+            construction, which saved us from small alignment errors that could later weaken the
+            structure.
           </p>
 
           <StyledImage
@@ -197,26 +192,20 @@ const WoodenBridgeProjectPage = ({ location }) => (
           />
 
           <h2>Construction Process</h2>
-
-          <h3>Material Preparation: The Science of Adhesion</h3>
           <p>
-            A critical discovery in our process was the importance of surface preparation. We
-            learned that sanding the popsicle sticks creates microscopic roughness that dramatically
-            improves white glue adhesion. White glue works through mechanical adhesion - it
-            penetrates surface irregularities and creates friction between the roughened wood
-            surfaces when cured.
-          </p>
-          <p>
-            This seemingly minor detail significantly increased our joint strength, as the
-            mechanical interlocking provided by the roughened surfaces supplements the chemical
-            bonding of the adhesive.
+            One of the first practical lessons we learned was how much surface preparation affects
+            joint strength. By sanding the sticks lightly, the glue had more surface area to grab
+            onto. White glue works through mechanical adhesion, so even a bit of roughness made a
+            noticeable difference in the stiffness of our joints. This step may seem minor, but on
+            top on other optimizations, it contributed to the overall performance of the bridge.
           </p>
 
           <h3>Arch Construction</h3>
           <p>
-            Our bridge consists of two main arches connected by St. Andrew's crosses. We started by
-            constructing each arch using a carefully planned layering system painted on kraft paper
-            as our template.
+            The bridge was built around two main arches joined by a series of bracing elements. To
+            keep both arches identical, we drew the shape on kraft paper and used it as a guide. We
+            built the first layer slowly, making several small adjustments until the arches matched
+            the geometry we needed.
           </p>
 
           <StyledImage
@@ -225,65 +214,73 @@ const WoodenBridgeProjectPage = ({ location }) => (
           />
 
           <p>
-            The first layer established our basic arch geometry, followed by iterative refinement
-            through trial and error to achieve optimal curvature and structural integrity.
+            We were struggling to find the right position for the sticks to achieve the right
+            dimensions without weaknesses. After several attempts, we realized that clamping the
+            sticks to the paper template using watered glue helped hold everything in place, and
+            suddenly, the bridge started to take shape.
           </p>
 
           <StyledImage
             src="/images/bridge/Bridge6.jpg"
             alt="Completed first layer of arch construction"
           />
+
+          <p style={{ marginBottom: '0px', marginTop: '0px' }}>
+            Once the first layer was solid, we continued adding material gradually, always checking
+            curvature, alignment, and stiffness as we went.
+          </p>
           <StyledImage
             src="/images/bridge/bridge7.jpg"
             alt="Refined arch after multiple iterations"
           />
 
-          <h3>Advanced Layering Strategy</h3>
-          <p>
-            Each arch incorporates 8 strategically distributed layers designed to handle different
-            types of structural loads:
+          <p style={{ marginTop: '40px' }}>
+            Each arch ended up with 8 layers of sticks. We didn’t just stack them. Each layer had a
+            purpose.
           </p>
           <p>
-            <strong>Layer Type 1:</strong> Simple interior and exterior arcs without triangulation -
-            optimized for weight reduction while maintaining basic structural form.
+            <strong>Layer Type 1a & 1b:</strong> These layers added triangulation to control
+            deformation. Alternating them changed the direction of the fibers at the joints, which
+            helped distribute the load more evenly and reduced the risk of weak points.
           </p>
           <p>
-            <strong>Layer Type 2a & 2b:</strong> Triangulated reinforcement layers that prevent
-            deformation in the XZ plane. The alternating patterns (2a vs 2b) ensure that fiber
-            direction changes at connection nodes, eliminating weak points and distributing stress
-            more effectively.
+            <strong>Layer Type 2:</strong> These were simple layers without triangulation. They kept
+            weight low while giving the arch its basic shape.
           </p>
-          <p>
-            Our layering sequence: 2a → 1 → 2b → 1 → 2a → 1 → 2b → 1, creates a composite structure
-            that balances strength with weight efficiency.
+
+          <p style={{ marginBottom: '0px' }}>
+            The final sequence [ 1a → 2 → 1b → 2 → 1a → 2 → 1b → 2 ] gave us a structure that was
+            strong while still staying inside the weight limit.
           </p>
 
           <StyledImage
             src="/images/bridge/bridge 8.jpg"
-            alt="Layer distribution pattern - Type 2a"
+            alt="Layer distribution pattern - Type 1a"
           />
-          <StyledImage src="/images/bridge/bridge9.jpg" alt="Layer distribution pattern - Type 1" />
-          <StyledImage
-            src="/images/bridge/bridge10.jpg"
-            alt="Layer distribution pattern - Type 2b"
-          />
+
+          <p style={{ marginBottom: '0px' }}>
+            Why we were doing this? By alternating the layer types, we ensured that no single joint
+            had all sticks aligned in the same direction so that the load would be shared more
+            effectively across the structure.
+          </p>
+
+          <StyledImage src="/images/bridge/bridge9.jpg" alt="Layer distribution pattern - Type 2" />
+
           <StyledImage
             src="/images/bridge/bridge11.jpg"
             alt="Complete layering system visualization"
           />
 
-          <h3>St. Andrew's Cross Innovation</h3>
+          <h3>St. Andrew's crosses</h3>
           <p>
-            The lateral stability system uses St. Andrew's crosses to prevent buckling in the YZ
-            plane. Our innovative approach includes a crucial design feature: the cross members
-            don't connect at their intersection point.
+            To stabilize the bridge laterally, we added St. Andrew’s crosses between the arches.
+            Furthermore, we had to ensure that the diagonals were not touching each other.
           </p>
           <p>
-            This deliberate disconnection allows each diagonal member to work primarily in tension
-            while avoiding compression failure. When compressed, the members can rotate slightly
-            without bearing load, but when tensioned, they provide excellent structural resistance.
-            Since wood performs better under tension than compression, this design optimizes
-            material properties.
+            But why? Because this allows each diagonal to work mainly in tension, where wood behaves
+            much better. If they were connected, they would share compression loads, and the sticks
+            could buckle easily. By leaving a small gap, the diagonals can rotate slightly under
+            compression but remain very effective when they are in tension.
           </p>
 
           <StyledImage
@@ -295,24 +292,21 @@ const WoodenBridgeProjectPage = ({ location }) => (
             alt="St. Andrew's cross installation progress"
           />
 
-          <p>
-            The crosses attach to the arches externally, extending beyond the arch perimeter before
-            connecting, ensuring they work in tension as intended.
-          </p>
+          <p style={{ marginBottom: '0px' }}>This is how we made the wooden joints.</p>
 
           <StyledImage
             src="/images/bridge/bridge17.jpg"
             alt="Detail of cross connection method to arches"
           />
+          <p style={{ marginBottom: '0px' }}>Work almost done!</p>
           <StyledImage src="/images/bridge/bridge14.jpg" alt="Nearly completed bridge structure" />
 
-          <h2>Final Assembly and Testing</h2>
-
-          <h3>Base Mounting</h3>
+          <h3>Base Mounting and load test</h3>
           <p>
-            The final critical step involved permanently mounting the bridge to its plywood base. We
-            applied white glue to the support points and used 50kg of water bottles as dead weight
-            to ensure proper adhesion during the 24-hour curing period.
+            After finishing the bridge, we glued it to the plywood base. To make sure it cured
+            properly, we placed about 50 kg of water bottles on top of the arches for a full day.
+            The connection to the base needed to be reliable since any slipping would invalidate the
+            test.
           </p>
 
           <StyledImage
@@ -322,8 +316,8 @@ const WoodenBridgeProjectPage = ({ location }) => (
 
           <h3>Weight Verification</h3>
           <p>
-            After curing, our completed bridge weighed exactly 4.2kg - meeting the competition's
-            maximum weight requirement with precision.
+            When everything was dry, we checked the final mass: 4.15 kg. That was almost the upper
+            limit of the competition, so we used every gram carefully
           </p>
 
           <StyledImage
@@ -333,9 +327,9 @@ const WoodenBridgeProjectPage = ({ location }) => (
 
           <h2>Competition Results</h2>
           <p>
-            During the competition, our bridge successfully supported 1,156kg before failure,
-            achieving a remarkable strength-to-weight ratio of 275:1. Each standard weight was 28kg,
-            with the initial test weight being 20kg.
+            During the load test, the bridge held 1,156 kg before failing. With a weight of 4.15 kg,
+            this gave us a strength-to-weight ratio of 275:1. The weights were added in 28 kg
+            blocks, starting with a 20 kg test block.
           </p>
 
           <StyledImage
@@ -344,10 +338,11 @@ const WoodenBridgeProjectPage = ({ location }) => (
           />
 
           <p>
-            This project demonstrated the power of combining theoretical engineering principles with
-            hands-on experimentation, careful material preparation, and innovative structural
-            design. The success came from understanding material properties, optimizing geometry,
-            and implementing creative solutions to complex engineering challenges.
+            Looking back, the project was a good example of what we had been learning throughout the
+            degree. load paths, materials behavior, joint design, and the value of validating ideas
+            with small experiments. It wasn’t perfect, and we faced plenty of small setbacks while
+            building, but those challenges were exactly what helped us understand how theory becomes
+            real engineering.
           </p>
         </StyledSection>
       </StyledContent>

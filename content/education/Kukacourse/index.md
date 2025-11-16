@@ -12,4 +12,4 @@ url: 'https://www.kuka.com/'
 - Programming and executing movements in KRL.
 - Implementing collision detection and logical functions.
 - Working with variables, data types, and control integration.
-- <a class="inline-link" href="/Kuka_P1_certificate.pdf" target="_blank" rel="noreferrer">View certificate</a>
+- <a class="inline-link" href="/documents/Kuka_P1_certificate.pdf" target="_blank" rel="noreferrer">View certificate</a>

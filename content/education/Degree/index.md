@@ -11,4 +11,4 @@ url: 'https://www.umh.es/'
 - Fluid Mechanics and Fluid Mechanics Systems
 - Strength of Materials and Structures
 - Design of Machines and Mechanical Components
-- <a class="inline-link" href="/Degree_certificate.pdf" target="_blank" rel="noreferrer">View certificate</a>
+- <a class="inline-link" href="/documents/Degree_certificate.pdf" target="_blank" rel="noreferrer">View certificate</a>

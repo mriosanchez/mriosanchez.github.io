@@ -5,7 +5,7 @@ github: ''
 external: ''
 tech:
   -
-showInProjects: true
+showInProjects: false
 ---
 
 This is a project template. Clicking this project will return a 404 error.

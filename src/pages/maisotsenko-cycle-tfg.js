@@ -124,8 +124,8 @@ const MaisotsenkoCyclePage = ({ location }) => (
           </div>
         </StyledSpecs>
         <StyledSection>
-          <p>
-            <StyledImage src="/images/maisotsenko/SlidesCycleM_page-0001.jpg" alt="Title Slide" />
+          <p style={{ marginTop: '-100px' }}>
+            <StyledImage src="/images/maisotsenko/SlidesCycleM_page-0003.jpg" alt="Title Slide" />
             The goal of this project is to make air conditioning systems more efficient and
             sustainable, helping to reduce energy use and emissions in buildings.{' '}
             <b>Buildings account for over 40% of energy use in the EU</b>, and a large part of this
@@ -133,7 +133,7 @@ const MaisotsenkoCyclePage = ({ location }) => (
             goals.
           </p>
           <p>
-            <StyledImage src="/images/maisotsenko/SlidesCycleM_page-0003.jpg" alt="ODS Slide" />
+            <StyledImage src="/images/maisotsenko/SlidesCycleM_page-0004.jpg" alt="ODS Slide" />
             The European Union has set ambitious targets for reducing energy consumption and
             greenhouse gas emissions by 2030 and 2050.{' '}
             <b>Climate change is making summers hotter and longer</b>, increasing the demand for air
@@ -141,7 +141,7 @@ const MaisotsenkoCyclePage = ({ location }) => (
           </p>
           <p>
             <StyledImage
-              src="/images/maisotsenko/SlidesCycleM_page-0004.jpg"
+              src="/images/maisotsenko/SlidesCycleM_page-0005.jpg"
               alt="Building Energy Slide"
             />
             In countries like Spain, Italy, and Portugal, cooling can represent up to 50% of a
@@ -151,7 +151,7 @@ const MaisotsenkoCyclePage = ({ location }) => (
           </p>
           <p>
             <StyledImage
-              src="/images/maisotsenko/SlidesCycleM_page-0005.jpg"
+              src="/images/maisotsenko/SlidesCycleM_page-0006.jpg"
               alt="Evaporative Cooling Slide"
             />
             One promising technique is <b>evaporative cooling</b>, which uses the evaporation of
@@ -161,7 +161,7 @@ const MaisotsenkoCyclePage = ({ location }) => (
           </p>
           <p>
             <StyledImage
-              src="/images/maisotsenko/SlidesCycleM_page-0006.jpg"
+              src="/images/maisotsenko/SlidesCycleM_page-0007.jpg"
               alt="Maisotsenko Cycle Slide"
             />
             <b>The M-Cycle can cool air down to its dew point</b>, which is even lower than the
@@ -170,7 +170,7 @@ const MaisotsenkoCyclePage = ({ location }) => (
           </p>
           <p>
             <StyledImage
-              src="/images/maisotsenko/SlidesCycleM_page-0007.jpg"
+              src="/images/maisotsenko/SlidesCycleM_page-0008.jpg"
               alt="Objectives Slide"
             />
             The main innovation in this project is to use the M-Cycle to{' '}
@@ -180,7 +180,7 @@ const MaisotsenkoCyclePage = ({ location }) => (
           </p>
           <p>
             <StyledImage
-              src="/images/maisotsenko/SlidesCycleM_page-0008.jpg"
+              src="/images/maisotsenko/SlidesCycleM_page-0009.jpg"
               alt="Modeling Slide"
             />
             To study this, I developed mathematical models for the M-Cycle, the heat pump, and the
@@ -190,7 +190,7 @@ const MaisotsenkoCyclePage = ({ location }) => (
           </p>
           <p>
             <StyledImage
-              src="/images/maisotsenko/SlidesCycleM_page-0009.jpg"
+              src="/images/maisotsenko/SlidesCycleM_page-0010.jpg"
               alt="M-Cycle Model Slide"
             />
             The M-Cycle model considers heat and mass transfer, and assumes no heat loss to the
@@ -199,7 +199,7 @@ const MaisotsenkoCyclePage = ({ location }) => (
           </p>
           <p>
             <StyledImage
-              src="/images/maisotsenko/SlidesCycleM_page-0010.jpg"
+              src="/images/maisotsenko/SlidesCycleM_page-0011.jpg"
               alt="M-Cycle Parameters Slide"
             />
             The system is simulated using real climate data for Alicante, focusing on the summer
@@ -207,7 +207,7 @@ const MaisotsenkoCyclePage = ({ location }) => (
           </p>
           <p>
             <StyledImage
-              src="/images/maisotsenko/SlidesCycleM_page-0011.jpg"
+              src="/images/maisotsenko/SlidesCycleM_page-0012.jpg"
               alt="Heat Pump Model Slide"
             />
             The heat pump's performance is validated with experimental data, confirming the accuracy
@@ -216,7 +216,7 @@ const MaisotsenkoCyclePage = ({ location }) => (
           </p>
           <p>
             <StyledImage
-              src="/images/maisotsenko/SlidesCycleM_page-0012.jpg"
+              src="/images/maisotsenko/SlidesCycleM_page-0013.jpg"
               alt="Climate Data Slide"
             />
             <b>All models are tested together</b> to see how the hybrid system would work in
@@ -226,7 +226,7 @@ const MaisotsenkoCyclePage = ({ location }) => (
           </p>
           <p>
             <StyledImage
-              src="/images/maisotsenko/SlidesCycleM_page-0013.jpg"
+              src="/images/maisotsenko/SlidesCycleM_page-0014.jpg"
               alt="Validation Slide"
             />
             <b>Key results:</b> Annual compressor energy use drops by 15%, and average EER increases
@@ -236,7 +236,7 @@ const MaisotsenkoCyclePage = ({ location }) => (
           </p>
           <p>
             <StyledImage
-              src="/images/maisotsenko/SlidesCycleM_page-0014.jpg"
+              src="/images/maisotsenko/SlidesCycleM_page-0015.jpg"
               alt="HP Validation Slide"
             />
             Different control strategies were tested to optimize when the M-Cycle operates,
@@ -245,7 +245,7 @@ const MaisotsenkoCyclePage = ({ location }) => (
           </p>
           <p>
             <StyledImage
-              src="/images/maisotsenko/SlidesCycleM_page-0015.jpg"
+              src="/images/maisotsenko/SlidesCycleM_page-0020.jpg"
               alt="Building Validation Slide"
             />
             <b>In summary:</b> Using the M-Cycle to pre-cool condenser air improves heat pump
@@ -253,13 +253,7 @@ const MaisotsenkoCyclePage = ({ location }) => (
             managed. This approach is especially promising for hot climates where air conditioning
             demand is high.
           </p>
-          <p>
-            <StyledImage
-              src="/images/maisotsenko/SlidesCycleM_page-0020.jpg"
-              alt="Conclusions Slide"
-            />
-            For more details, you can download the full thesis below.
-          </p>
+          <p>For more details, you can download the full thesis below.</p>
           <p>
             <a
               href="/images/maisotsenko/ThesisCycleM.pdf"
