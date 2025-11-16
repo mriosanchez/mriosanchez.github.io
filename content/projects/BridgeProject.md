@@ -1,5 +1,5 @@
 ---
-date: '2017-12-27'
+date: '2023-05-01'
 title: 'Wooden Bridge Competition'
 github: ''
 external: '/wooden-bridge-project'
