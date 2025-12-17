@@ -42,14 +42,16 @@ const About = () => {
   const skills = [
     'Python',
     'HTML',
+    'AI',
     'Matlab',
     'Simulink',
     'SAP',
     'ESS',
     'AutoCAD',
     'Inventor',
+    'SolidWorks',
+    'Gsuite',
     'Office 365',
-    'AI',
   ];
 
   return (
@@ -81,11 +83,11 @@ const About = () => {
               at Airbus with training in data analysis, business management, and soft skills.
             </p>
             <p>
-              Fast-forward to today, I’ve had the privilege of working at{' '}
-              <a href="https://www.airbus.com">a huge corporation</a>,{' '}
-              <a href="https://tuhacesalicante.com">a SME</a>,{' '}
-              <a href="https://youth.europa.eu/solidarity_en">a volunteering corps</a>,{' '}
-              <a href="https://restaurantemarte.com">a restaurant</a>, and as a lifeguard during
+              Fast-forward to today, I’ve had the privilege of working at a{' '}
+              <a href="https://www.airbus.com">huge corporation</a>, a{' '}
+              <a href="https://tuhacesalicante.com">SME</a>, a{' '}
+              <a href="https://youth.europa.eu/solidarity_en">volunteering corps</a>, a{' '}
+              <a href="https://restaurantemarte.com">restaurant</a>, and as a lifeguard during
               summers. My main focus these days is giving useful solutions for the world.
             </p>
 

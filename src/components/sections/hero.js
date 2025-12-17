@@ -106,14 +106,7 @@ const Hero = () => {
   const items = [
     <h2 key="name">Mario Sánchez</h2>,
     <h3 key="title">Mechanical Engineer </h3>,
-    <p key="description">
-      I love designing, building &amp; fixing things. I'm currently focused on data science and
-      predictive maintenance at{' '}
-      <a href="https://www.airbus.com" target="_blank" rel="noreferrer">
-        Airbus
-      </a>
-      .
-    </p>,
+    <p key="description">I love to imagine, design, build, and fix things.</p>,
   ];
 
   return (
