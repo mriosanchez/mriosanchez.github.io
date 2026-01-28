@@ -22,7 +22,7 @@ const StyledCursor = styled.div`
       rgba(40, 60, 150, 0.2) 0%,
       rgba(40, 60, 150, 0.15) 25%,
       rgba(40, 60, 150, 0.08) 50%,
-      rgba(40, 60, 150, 0.03) 75%,
+      rgba(40, 60, 150, 0.01) 75%,
       transparent 100%
     );
     opacity: 1;
@@ -42,7 +42,9 @@ const Cursor = () => {
   }, []);
 
   useEffect(() => {
-    if (!hasMounted) {return;}
+    if (!hasMounted) {
+      return;
+    }
 
     const updateMousePosition = e => {
       const mouseX = (e.clientX / window.innerWidth) * 100;
@@ -67,7 +69,9 @@ const Cursor = () => {
     };
   }, [hasMounted]);
 
-  if (!hasMounted) {return null;}
+  if (!hasMounted) {
+    return null;
+  }
   return <StyledCursor />;
 };
 

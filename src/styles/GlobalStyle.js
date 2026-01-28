@@ -54,8 +54,8 @@ const GlobalStyle = createGlobalStyle`
 
   /* Scrollbar Styles */
   html {
-    scrollbar-width: thin;
-    scrollbar-color: var(--dark-slate) var(--navy);
+    scrollbar-width: normal;
+    scrollbar-color: var(--dark-slate) var(--dark-navy);
   }
   ::-webkit-scrollbar {
     width: 12px;
@@ -123,46 +123,51 @@ const GlobalStyle = createGlobalStyle`
   main {
     margin: 0 auto;
     width: 100%;
-    max-width: 1600px;
+    max-width: 1200px;
     min-height: 100vh;
-    padding: 200px 150px;
+    padding: 120px 32px 60px 32px;
 
     @media (max-width: 1080px) {
-      padding: 200px 100px;
+      padding: 100px 24px 40px 24px;
+      max-width: 1000px;
     }
     @media (max-width: 768px) {
-      padding: 150px 50px;
+      padding: 80px 16px 32px 16px;
+      max-width: 95vw;
     }
     @media (max-width: 480px) {
-      padding: 125px 25px;
+      padding: 60px 8px 24px 8px;
+      max-width: 100vw;
     }
 
     &.fillHeight {
-      padding: 0 150px;
+      padding: 0 32px;
 
       @media (max-width: 1080px) {
-        padding: 0 100px;
+        padding: 0 24px;
       }
       @media (max-width: 768px) {
-        padding: 0 50px;
+        padding: 0 12px;
       }
       @media (max-width: 480px) {
-        padding: 0 25px;
+        padding: 0 4px;
       }
     }
   }
 
   section {
-    margin: 0 auto;
-    padding: 100px 0;
-    max-width: 1000px;
+    margin: 0 auto 48px auto;
+    padding: 64px 0 32px 0;
+    max-width: 900px;
 
     @media (max-width: 768px) {
-      padding: 80px 0;
+      padding: 48px 0 24px 0;
+      max-width: 98vw;
     }
 
     @media (max-width: 480px) {
-      padding: 60px 0;
+      padding: 32px 0 16px 0;
+      max-width: 100vw;
     }
   }
 
