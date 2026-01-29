@@ -54,7 +54,7 @@ const GlobalStyle = createGlobalStyle`
 
   /* Scrollbar Styles */
   html {
-    scrollbar-width: normal;
+    scrollbar-width: thin;
     scrollbar-color: var(--dark-slate) var(--dark-navy);
   }
   ::-webkit-scrollbar {
@@ -129,7 +129,7 @@ const GlobalStyle = createGlobalStyle`
 
     @media (max-width: 1080px) {
       padding: 100px 24px 40px 24px;
-      max-width: 1000px;
+      max-width: 10px;
     }
     @media (max-width: 768px) {
       padding: 80px 16px 32px 16px;
