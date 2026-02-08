@@ -6,14 +6,14 @@ module.exports = {
       name: 'GitHub',
       url: 'https://github.com/mriosanchez',
     },
-    // {
-    //   name: 'Instagram',
-    //   url: 'https://www.instagram.com/mariito_o',
-    // },
-    // {
-    //   name: 'Twitter',
-    //   url: 'https://x.com/mariito_0',
-    // },
+    {
+      name: 'Instagram',
+      url: 'https://www.instagram.com/mariito_o',
+    },
+    {
+      name: 'Twitter',
+      url: 'https://x.com/mariito_0',
+    },
     {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/mriosanchezrodriguez',
