@@ -7,7 +7,7 @@ tech:
   - Thermodynamics
   - HVAC Systems
   - Experimental Analysis
-showInProjects: false
+showInProjects: true
 ---
 
 Set of laboratory practices on industrial heating and cooling systems, including chillers, refrigeration cycles, dehumidifiers, evaporative cooling and combustion analysis. Focused on experimental measurements and performance evaluation.

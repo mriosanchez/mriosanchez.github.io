@@ -1,5 +1,5 @@
 ---
-date: '2026-01-01'
+date: '3'
 title: 'Thesis Optimization A320 Demoulding Process'
 cover: './desmoldeo.png'
 external: '/documents/TFM_Desmoldeo_A320.pdf'

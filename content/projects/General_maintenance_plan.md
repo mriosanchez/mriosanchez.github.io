@@ -1,8 +1,8 @@
 ---
 date: '2024-02-01'
-title: 'Fleet Maintenance Plan Update, UTE Netial'
+title: 'Fleet Maintenance Plan Update'
 github: ''
-external: '/documents/ute_netial_maintenance_plan.pdf'
+external: '/documents/General_maintenance_plan.pdf'
 tech:
   - Maintenance Engineering
   - Fleet Management
