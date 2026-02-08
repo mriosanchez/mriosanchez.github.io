@@ -8,24 +8,20 @@ const StyledCursor = styled.div`
   width: 100vw;
   height: 100vh;
   pointer-events: none;
-  z-index: 1000;
+  /* Z-INDEX NEGATIVO: Se coloca detrás de todo el contenido */
+  z-index: 1;
 
   &::before {
     content: '';
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
+    position: absolute;
+    inset: 0;
     background: radial-gradient(
-      500px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
-      rgba(40, 60, 150, 0.2) 0%,
-      rgba(40, 60, 150, 0.15) 25%,
-      rgba(40, 60, 150, 0.08) 50%,
-      rgba(40, 60, 150, 0.03) 75%,
-      transparent 100%
+      600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%),
+      rgba(40, 60, 150, 0.15) 0%,
+      rgba(40, 60, 150, 0.1) 40%,
+      transparent 80%
     );
-    opacity: 1;
+    opacity: var(--opacity, 0);
     transition: opacity 0.3s ease;
   }
 
@@ -42,32 +38,35 @@ const Cursor = () => {
   }, []);
 
   useEffect(() => {
-    if (!hasMounted) {return;}
+    if (!hasMounted || window.innerWidth <= 768) {return;}
+
+    const root = document.documentElement;
 
     const updateMousePosition = e => {
-      const mouseX = (e.clientX / window.innerWidth) * 100;
-      const mouseY = (e.clientY / window.innerHeight) * 100;
-
-      document.documentElement.style.setProperty('--mouse-x', `${mouseX}%`);
-      document.documentElement.style.setProperty('--mouse-y', `${mouseY}%`);
+      // Usamos requestAnimationFrame para una suavidad total (60fps+)
+      window.requestAnimationFrame(() => {
+        root.style.setProperty('--mouse-x', `${e.clientX}px`);
+        root.style.setProperty('--mouse-y', `${e.clientY}px`);
+        root.style.setProperty('--opacity', '1');
+      });
     };
 
-    const shouldAddListener = window.innerWidth > 768;
+    // Ocultar cuando el ratón sale de la ventana
+    const handleMouseLeave = () => {
+      root.style.setProperty('--opacity', '0');
+    };
 
-    if (shouldAddListener) {
-      document.addEventListener('mousemove', updateMousePosition);
-      document.documentElement.style.setProperty('--mouse-x', '50%');
-      document.documentElement.style.setProperty('--mouse-y', '50%');
-    }
+    window.addEventListener('mousemove', updateMousePosition);
+    window.addEventListener('mouseleave', handleMouseLeave);
 
     return () => {
-      if (shouldAddListener) {
-        document.removeEventListener('mousemove', updateMousePosition);
-      }
+      window.removeEventListener('mousemove', updateMousePosition);
+      window.removeEventListener('mouseleave', handleMouseLeave);
     };
   }, [hasMounted]);
 
   if (!hasMounted) {return null;}
+
   return <StyledCursor />;
 };
 
