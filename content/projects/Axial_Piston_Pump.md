@@ -1,15 +1,13 @@
 ---
-date: '2023-01-01'
-title: 'Kinematic & Dynamic Analysis of Linkage Mechanisms'
+date: '2023-02-01'
+title: 'Axial Piston Hydraulic Pump CAD & Technical Drawings Project'
 github: ''
-external: '/documents/Informe_practicas_ma.pdf'
+external: '/documents/axial-piston-pump-cad.pdf'
 tech:
-  - MATLAB
+  - CAD Modeling
   - Autodesk Inventor
-  - Numerical Methods
-  - Mechanical Simulation
 
 showInProjects: true
 ---
 
-Kinematic and dynamic analysis of a 2-dimensional mechanism using a dual approach: mathematical modeling in MATLAB and validation by simulation in Autodesk Inventor.
+A complete CAD and drafting project based on a fixed axial piston hydraulic pump. The work included creating, editing and customizing key components (body embossing, shaft scaling and gear parametrization), creating positional representations, generating an assembly with exploded views following disassembly logic, and producing all associated manufacturing drawings. The final deliverable consisted of a full multi-sheet technical drawing package and the complete updated Inventor project, including models, assemblies and documentation.
