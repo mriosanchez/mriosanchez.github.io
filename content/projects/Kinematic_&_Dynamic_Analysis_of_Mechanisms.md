@@ -1,6 +1,6 @@
 ---
 date: '2023-01-01'
-title: 'Kinematic & Dynamic Analysis of Linkage Mechanisms'
+title: 'Kinematic & Dynamic Analysis of Mechanisms'
 github: ''
 external: '/documents/Informe_practicas_ma.pdf'
 tech:
