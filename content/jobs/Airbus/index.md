@@ -11,4 +11,4 @@ url: 'https://www.airbus.com'
 - Delivered technical specifications and coordinated with external suppliers.
 - Automated document workflows and managed intranet content for the team.
 - Supported daily production routines within the plant.
-- <a class="inline-link" href="\certificates\Recommendation_Letter_Airbus.pdf" target="_blank" rel="noreferrer">View recommendation letter</a>
+- <a class="inline-link" href="\certificates\Recommendation_Letter_Airbus.pdf" target="_self" rel="noreferrer">View recommendation letter</a>

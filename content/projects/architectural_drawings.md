@@ -1,6 +1,6 @@
 ---
 date: '2021-01-01'
-title: 'Architectural Drawingss'
+title: 'Architectural Drawings'
 github: ''
 external: 'documents/house_drawings.pdf'
 tech:

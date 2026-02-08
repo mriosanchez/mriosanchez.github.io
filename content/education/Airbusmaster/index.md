@@ -10,4 +10,4 @@ url: 'https://fundacionuniversidadempresa.es/es/'
 - Communication, teamwork, adaptability, &amp; presentation skills.
 - Python, SQL/NoSQL, ETL processes, data science &amp; machine learning.
 - strategic analysis, marketing &amp; finances.
-- <a class="inline-link" href="/404" target="_blank" rel="noreferrer">View certificate</a>
+- <a class="inline-link" href="/404" target="_self" rel="noreferrer">View certificate</a>

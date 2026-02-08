@@ -4,7 +4,7 @@ title: 'Lifeguard'
 company: 'Acuatic Safe'
 location: 'Alicante, Spain'
 range: 'August - September 2018'
-#url: 'https://tuhacesalicante.com' //in this case it doesn't have one
+#url: 'https://tuhacesalicante.com'
 ---
 
 - Supervised and maintained swimming pool facilities to ensure proper functioning.

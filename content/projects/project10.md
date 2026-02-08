@@ -1,8 +1,10 @@
 ---
 date: '2000-01-01'
-title: 'Automatic demoulding A320'
+title: 'Future Project 5'
 github: ''
 external: ''
+ios: ''
+android: ''
 tech:
   -
 showInProjects: false

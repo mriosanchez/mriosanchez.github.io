@@ -1,14 +1,13 @@
 ---
-date: '3'
-title: 'Datascience for Demoulding A320'
-cover: './demo.png'
-external: ''
+date: '2026-01-01'
+title: 'Thesis Optimization A320 Demoulding Process'
+cover: './desmoldeo.png'
+external: '/documents/TFM_Desmoldeo_A320.pdf'
 cta: ''
 tech:
-  - Not yet
-  - Not yet
-  - Not yet
-  - Not yet
+  - Python
+  - AppScript
+  - Data Analytics
 ---
 
-Not ready yet. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur eu lacus sollicitudin lorem aliquam fringilla. Donec dictum lacus in metus maximus varius. Morbi in nunc varius, faucibus tellus et, scelerisque arcu. Proin a malesuada quam. Praesent ultricies ut eros eget sodales.
+Master’s thesis focused on the application of data analytics to the A320 demolding process at the Airbus Illescas plant. The project transforms raw machine cycle reports into a structured dataset using Python, enabling the analysis of cycle times, alarms, and failure patterns.
